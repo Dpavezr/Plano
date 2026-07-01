@@ -444,9 +444,7 @@ elif vista_activa == "dotacion":
 
         with tab1:
             st.markdown('<div class="section-header">Total personas × planta × semana</div>', unsafe_allow_html=True)
-            st.dataframe(
-                rd["personas_x_planta_semana"].style.format("{:.0f}")
-                .background_gradient(cmap="Blues", axis=1),
+            st.dataframe(rd["personas_x_planta_semana"].style.format("{:.0f}"),
                 use_container_width=True
             )
 
