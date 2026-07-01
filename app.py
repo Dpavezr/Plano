@@ -14,7 +14,7 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from motor.estado import init_estado, get_sem_labels, formato_miles, formato_mm, PLANTAS_ACTIVAS
+from estado import init_estado, get_sem_labels, PLANTAS_ACTIVAS
 from motor.motor_planificacion import ESPECIES, ESPECIES_AGRUPADAS
 from motor.modulo_dotacion import MotorDotacion
 
